@@ -29,56 +29,45 @@
         private void InitializeComponent()
         {
             this.text1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // text1
             // 
-            this.text1.Location = new System.Drawing.Point(316, 146);
+            this.text1.Location = new System.Drawing.Point(292, 100);
             this.text1.Name = "text1";
             this.text1.Size = new System.Drawing.Size(98, 20);
             this.text1.TabIndex = 0;
-            this.text1.Text = "Haz una elección";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(574, 146);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(70, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Opcion A";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(574, 195);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Opcion B";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.text1.Text = "Ingrese usuario";
+            this.text1.TextChanged += new System.EventHandler(this.text1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(431, 290);
+            this.button1.Location = new System.Drawing.Point(372, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 44);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Boton de cambio";
+            this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(426, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Usuario";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.text1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -91,9 +80,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox text1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
