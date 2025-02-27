@@ -31,11 +31,12 @@
             this.text1 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // text1
             // 
-            this.text1.Location = new System.Drawing.Point(254, 151);
+            this.text1.Location = new System.Drawing.Point(316, 146);
             this.text1.Name = "text1";
             this.text1.Size = new System.Drawing.Size(98, 20);
             this.text1.TabIndex = 0;
@@ -44,7 +45,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(431, 128);
+            this.checkBox1.Location = new System.Drawing.Point(574, 146);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(70, 17);
             this.checkBox1.TabIndex = 1;
@@ -54,18 +55,28 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(431, 177);
+            this.checkBox2.Location = new System.Drawing.Point(574, 195);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(70, 17);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Opcion B";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(431, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(62, 44);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Boton de cambio";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.text1);
@@ -82,6 +93,7 @@
         private System.Windows.Forms.TextBox text1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
